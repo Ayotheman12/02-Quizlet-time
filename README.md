@@ -7,3 +7,6 @@ The quiz is timed, with incorrect answers penalizing the remaining time by ten s
 index.html contains the initial content of the starting screen, and highscore.html contains the initial content of the high score page. style.css contains the stylings for both HTML files. questions.js contains the questions and answers for the quiz. script.js contains the code that dynamically renders the questions and game over screens in the index.html page and handles the game logic of the quiz. score.js contains the code that renders the high score list to, and otherwise provides the functionality for, the high score page.
 
 In completing this project, I learned the benefits of splitting code up into multiple files. Initially, I planned to include only a single HTML file and a single JS file which would have contained all of my content and code, respectively. Splitting the code up allowed better logical separation of different sections and functionalities, and kept the files from getting as long and cluttered as they would have otherwise.
+
+github 
+https://github.com/Ayotheman12/02-Quizlet-time.git
