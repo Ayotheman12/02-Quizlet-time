@@ -13,3 +13,7 @@ In completing this project, I learned the benefits of splitting code up into mul
 github ![Screen Shot 2024-04-09 at 4 48 47 PM](https://github.com/Ayotheman12/02-Quizlet-time/assets/150096498/b28725b0-ce7a-4f7b-8d3d-5d360a4d650f)
 
 https://github.com/Ayotheman12/02-Quizlet-time.git
+https://ayotheman12.github.io/02-Quizlet-time/
+
+License
+No license at this time.
