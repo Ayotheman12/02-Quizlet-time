@@ -1,0 +1,167 @@
+/* Color variables */
+:root {
+    --grey: rgb(158,158,158);
+    --darkpurple: rgb(49,32,112);
+    --brightpurple: rgb(177,105,224);
+    --palepurple: rgb(216,212,231);
+    --paledarkpurple: rgb(172, 158, 224);
+}
+
+/* General stylings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+/* Header stylings */
+header {
+    /* Keep the position of the main the same with or without the header */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1em 1.5em;
+    /* Position the link and the timer at opposite ends of the header */
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: var(--brightpurple);
+}
+
+/* Section stylings */
+section {
+    /* Position the content vertically */
+    margin-top: 20vh;
+    /* Arrange the internal content in a column */
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+section#start-section {
+    /* The start section's items should be center-aligned */
+    align-items: center;
+    text-align: center;
+}
+
+section#question-section, section#game-over-section, section#high-score-section {
+    /* The other section's items should be left-aligned */
+    margin-left: 25%;
+    align-items: flex-start;
+}
+
+section#question-section {
+    /* The gaps between the buttons in the question section should be small */
+    gap: 0.5em; 
+    margin-right: 10%;  
+}
+
+section#high-score-section {
+    margin-right: 25%;
+}
+
+section#start-section * {
+    /* The paragraph in the start section should wrap */
+    max-width: 60%;
+}
+
+/* Heading stylings */
+h1 {
+    /* Larger font for the h1 */
+    font-size: 2em;
+}
+
+/* Button stylings */
+button, input[type="submit"] {
+    /* Style the buttons and submit buttons */
+    color: white;
+    background-color: var(--darkpurple);
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+}
+
+button:active, input[type="submit"]:active {
+    /* Make the buttons, submit buttons change color when clicked */
+    background-color: var(--brightpurple);
+}
+
+#back-button, #clear-button, input[type="submit"] {
+    /* The back, clear, and submit buttons should be smaller */
+    font-size: 0.9em;
+    border-radius: 0.3em;
+    padding: 0.4em 1em;
+}
+
+/* Style the ruling and blurb that appear after answering a question */
+hr {
+    margin-top: 1em;
+    width: 100%;
+}
+
+hr, #blurb {
+    color: var(--grey);
+}
+
+#blurb {
+    font-style: italic;
+}
+
+/* Game over screen stylings */
+input {
+    /* Space between the textbox and the submit button */
+    margin-inline: 0.3em;
+}
+
+input[type="text"] {
+    /* Adjust the size of the textbox */
+    height: 1.6em;
+    /* Add padding to the inside of the textbox */
+    padding: 0.2em;
+}
+
+/* Highscores page stylings */
+ol {
+    /* Make the list items take the full width */
+    width: 100%;
+}
+
+li {
+    background-color: var(--palepurple);
+    /* Place the list numbers inside the list element, not to the left */
+    list-style-position: inside;
+    padding: 0.2em 0.4em;
+}
+
+li:nth-child(2n) {
+    /* Give alternating list items a different background color */
+    background-color: var(--paledarkpurple);
+}
+
+/* Screen size-responsive stylings */
+@media (max-width: 1000px) {
+    section#question-section, section#game-over-section, section#high-score-section {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 780px) {
+    section#start-section * {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em
+    }
+}
